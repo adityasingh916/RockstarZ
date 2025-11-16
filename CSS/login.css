@@ -1,0 +1,254 @@
+ body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* --- Gradient Text (from homepage) --- */
+        .gradient-text {
+            background-image: linear-gradient(90deg, #E01A8A, #FD8900);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: 900;
+        }
+
+        .containers {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 20px 40px;
+            background-color: rgb(0, 0, 0);
+            opacity: 70%;
+            
+        }
+
+        .logopng {
+            display: flex;
+            
+        }
+
+        header .logo {
+            height: 100px;
+            width: 100px;
+            object-fit: contain;
+            opacity: 100%;
+            margin-left: -270px;
+        }
+
+        .head-right {
+            display: flex;
+            gap: 0px;
+        }
+
+        .head-right a { 
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            
+            font-size: 25px;
+            padding-left: 25px;
+            transition: color 0.2s ease, font-size 0.77s ease;
+            display: inline-block;
+        }
+
+        .head-right a:hover {
+          
+            color: red;
+            font-size: 30px;
+            
+        }
+
+        .head-right a.active {
+            
+            color: #E01A8A; 
+        }
+
+        .headmiddle {
+            display: flex;
+            justify-content: space-evenly;
+            transition: 0.3s;
+            cursor: pointer;
+            
+            background-color: rgb(4, 4, 4);
+            margin-right: -250px;
+        }
+        
+      
+        .headmiddle p {
+            margin: 0; 
+        }
+
+        .headmiddle button {
+            
+            background-color: rgb(0, 0, 0);
+            border: none; 
+            cursor: pointer;
+            padding: 0;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin: 10px;
+        }
+        
+        .headmiddle button:hover{
+            background-color: rgb(7, 7, 7);
+            box-shadow: 0 0 5px rgb(159, 159, 159);
+            border-radius: 100px;
+        }
+
+        .headmiddle button img {
+            
+            height: 50px;
+            padding-left: 10px; 
+            margin-right: 5px; 
+            transition: height 0.77s ease;
+        }
+        
+        .headmiddle button:hover img {
+            
+            height: 60px;
+        }
+
+
+        .signin-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh; /* Give it some space */
+        }
+
+        .signin-box {
+            background-color: #0a0a0a;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 2.5rem 3rem;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .signin-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #ccc;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #E01A8A; /* Pink accent on focus */
+            box-shadow: 0 0 10px rgba(224, 26, 138, 0.3);
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #000; /* Black text */
+            background-image: linear-gradient(90deg, #E01A8A, #FD8900);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(253, 137, 0, 0.4);
+        }
+
+        .signin-links {
+            margin-top: 1.5rem;
+        }
+
+        .signin-links a {
+            color: #C3E965; /* Yellow/Green accent */
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .signin-links a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 1000px) {
+            .header-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 20px;
+            }
+            .logopng {
+                width: 100%;
+                justify-content: center;
+            }
+            .head-right {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                gap: 15px;
+            }
+            .head-right a {
+                font-size: 20px;
+            }
+            .headmiddle {
+                order: 2;
+            }
+            .container {
+                padding-top: 250px; /* More padding for taller header */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .head-right a {
+                font-size: 18px;
+            }
+            .headmiddle button img {
+                height: 40px;
+            }
+            .container {
+                width: 95%;
+                padding-top: 230px;
+            }
+            .signin-box {
+                padding: 2rem 1.5rem;
+            }
+        }
