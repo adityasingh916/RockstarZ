@@ -7,7 +7,7 @@
             line-height: 1.6;
         }
 
-        /* --- Gradient Text (from homepage) --- */
+       
         .gradient-text {
             background-image: linear-gradient(90deg, #E01A8A, #FD8900);
             background-clip: text;
@@ -125,7 +125,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 60vh; /* Give it some space */
+            min-height: 60vh; 
         }
 
         .signin-box {
@@ -163,13 +163,13 @@
             background-color: #1a1a1a;
             border: 1px solid #333;
             border-radius: 8px;
-            box-sizing: border-box; /* Ensures padding doesn't affect width */
+            box-sizing: border-box; 
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .form-group input:focus {
             outline: none;
-            border-color: #E01A8A; /* Pink accent on focus */
+            border-color: #E01A8A; 
             box-shadow: 0 0 10px rgba(224, 26, 138, 0.3);
         }
 
@@ -178,7 +178,7 @@
             padding: 0.85rem 1rem;
             font-size: 1.1rem;
             font-weight: 700;
-            color: #000; /* Black text */
+            color: #000; 
             background-image: linear-gradient(90deg, #E01A8A, #FD8900);
             border: none;
             border-radius: 8px;
@@ -197,7 +197,7 @@
         }
 
         .signin-links a {
-            color: #C3E965; /* Yellow/Green accent */
+            color: #C3E965;
             text-decoration: none;
             font-size: 0.9rem;
             margin: 0 0.5rem;
@@ -209,7 +209,7 @@
             text-decoration: underline;
         }
 
-        /* --- Responsive Design --- */
+        
         @media (max-width: 1000px) {
             .header-container {
                 flex-wrap: wrap;
@@ -233,7 +233,7 @@
                 order: 2;
             }
             .container {
-                padding-top: 250px; /* More padding for taller header */
+                padding-top: 250px; 
             }
         }
 
